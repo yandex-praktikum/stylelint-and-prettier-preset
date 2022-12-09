@@ -1,0 +1,21 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.8.0",
+    "stylelint": "^14.15.0"
+  }
+}
